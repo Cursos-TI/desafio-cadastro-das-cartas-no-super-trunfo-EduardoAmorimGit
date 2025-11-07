@@ -106,7 +106,8 @@ int main() {
     printf("Comparação de Cartas: Atributo: População!\n");
     printf("A População da Carta %s é: %u !\n", carta1, populaçao1);
     printf("A População da Carta %s é: %u !\n", carta2, populaçao2);
-
+    printf("teste");
+    
     if(carta1 == carta2){
         printf("Houve um empate, nenhuma das duas venceram!\n");
         else {
