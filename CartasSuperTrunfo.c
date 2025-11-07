@@ -8,25 +8,25 @@ int main() {
     float area1, area2, pib1, pib2, densidade1, densidade2, pibcapta1, pibcapta2, superpoder1, superpoder2, comparaçãoPopulação, comparaçãoArea, comparaçãoPib, comparaçãoTuristico, comparaçãoDensidade, comparaçãoPibpercapita, comparaçãoPoder;
 
 //comecei a armazenar as respostas do usuário.
-    printf("Estado: ");
+    printf("Estado: \n");
     scanf("%s", &estado1);
 
-    printf("Código da carta: ");
+    printf("Código da carta: \n");
     scanf("%s", &carta1);
 
-    printf("Nome da Cidade: ");
+    printf("Nome da Cidade: \n");
     scanf("%s", &cidade1);
 
-    printf("População: ");
+    printf("População: \n");
     scanf("%u", &populaçao1);
 
-    printf("Área: ");
+    printf("Área: \n");
     scanf("%f", &area1);
 
-    printf("PIB: ");
+    printf("PIB: \n");
     scanf("%f", &pib1);
 
-    printf("Pontos turísticos: ");
+    printf("Pontos turísticos: \n");
     scanf("%d", &turistico1);
     //Recolhendo informações de população, area e pib e divindo população por area e pib por população.
     densidade1 = (populaçao1 / area1);
@@ -102,17 +102,21 @@ int main() {
     comparaçãoDensidade = densidade1 < densidade2;
     comparaçãoPibpercapita = pibcapta1 > pibcapta2;
     comparaçãoPoder = superpoder1 > superpoder2;
-    
-    printf("*****Inicio das comparações*****\n");
-    printf("A Carta Vencedora de Maior população é: %.0f\n", comparaçãoPopulação);
-    printf("A Carta Vencedora de Maior Área é: %.0f\n", comparaçãoArea);
-    printf("A Carta Vencedora de Maior PIB é: %.0f\n", comparaçãoPib);
-    printf("A Carta Vencedora de Maior Pontos Turísticos é: %.0f\n", comparaçãoTuristico);
-    printf("A Carta Vencedora de Menor Densidade Populacional é: %.0f\n", comparaçãoDensidade);
-    printf("A Carta Vencedora de Maior PIB per Capita é: %.0f\n", comparaçãoPibpercapita);
-    printf("A Carta Vencedora de Maior SuperPoder é: %.0f\n", comparaçãoPoder);
 
-    printf("***Se tornando vencedora a carta que possuir mais pontos!***");
+    printf("Comparação de Cartas: Atributo: População!\n");
+    printf("A População da Carta %s é: %u !\n", carta1, populaçao1);
+    printf("A População da Carta %s é: %u !\n", carta2, populaçao2);
+
+    if(carta1 == carta2){
+        printf("Houve um empate, nenhuma das duas venceram!\n");
+        else {
+            if(carta1 > carta2);
+            printf("Carta 01 possui a maior população!\n");
+            else{
+                printf("Carta 02 possui a maior população\n");
+            }
+        }
+    }
 
     return 0;
 
